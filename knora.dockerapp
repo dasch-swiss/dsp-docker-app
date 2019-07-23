@@ -1,11 +1,20 @@
-#  Defined in KnoraBuild.sbt:
-# - KNORA_GDB_LICENSE - path to the GraphDB-SE license file (can be overridden through environment variable KNORA_GDB_LICENSE)
-# - KNORA_GDB_HOME - path to a local folder where GraphDB should store it's data can be overridden through environment variable KNORA_GDB_HOME)
-# - KNORA_GDB_TYPE - the GraphDB version used ('graphdb-se' or 'graphdb-free')
-#
-# To run: $ sbt dockerComposeUp
+# This section contains your application metadata.
+# Version of the application
+version: 8.0.0
+# Name of the application
+name: knora-stack
+# A short description of the application
+description: Docker-App for running the complete Knora-Stack
+# Namespace to use when pushing to a registry. This is typically your Hub username.
+namespace: daschswiss
+# List of application maintainers with name and email for each
+maintainers:
+  - name: Ivan Subotic
+    email: ivan.subotic@unibas.ch
 
-version: '3'
+---
+# This section contains the Compose file that describes your application services.
+version: '3.7'
 
 services:
 

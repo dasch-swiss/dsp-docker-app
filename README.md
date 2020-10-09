@@ -1,4 +1,4 @@
-# Knora-Docker-App
+# DSP-Docker-App
 
 Docker-App for running the complete Knora-Stack.
 
